@@ -250,3 +250,98 @@ input {
 .contact a {
     text-decoration: none;
 }
+
+/* responsive styles */
+@media screen and (max-width: 576px) {
+    .header {
+        background-image: none;
+    }
+    section[role="banner"] {
+        margin: 0 20px;
+    }
+    section[role="banner"] img {
+        width: 100%;
+    }
+
+    nav, nav ul, section[role="banner"], .skills-container, .resume-content, .what-i-am, .contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    nav ul {
+        align-items: flex-start;
+    }
+    nav li {
+        margin-left: 0;
+    }
+
+    .about-me {
+        padding: 20px;
+    }
+    .what-i-am p {
+        text-align: center;
+    }
+    .contact section {
+        margin-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .contact section:first-child {
+        padding-bottom: 0;
+    }
+    .contact .section-title {
+        margin-bottom: 20px;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    nav {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    section[role="banner"] {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    section[role="banner"] img {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 50px 25px;
+        gap: 30px;
+    }
+    .contact .section-title {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+
+    .what-i-am {
+        flex-direction: column;
+    }
+    .what-i-am article {
+        margin-bottom: 25px;
+    }
+    .what-i-am p {
+        text-align: center;
+    }
+
+    .resume {
+        padding: 35px;
+    }
+    .resume .sub-title {
+        text-overflow: hidden;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        padding: 20px 100px;
+    }
+    .what-i-do .section-title {
+        margin-bottom: 70px;
+    }
+}
